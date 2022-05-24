@@ -1,7 +1,10 @@
 const API_URL = "http://ec2-3-239-221-74.compute-1.amazonaws.com:8000/api/v1";
 const requestOptions = {
   headers: { 
-    "hash": "OcJn4jYChW"
+    "hash": "OcJn4jYChW",
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Origin': '*',
   }
 };
 
