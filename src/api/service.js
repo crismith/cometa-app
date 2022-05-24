@@ -5,6 +5,7 @@ const requestOptions = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Origin': '*',
+    "Access-Control-Allow-Origin": "*"
   }
 };
 
