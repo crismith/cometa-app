@@ -33,18 +33,18 @@ export async function getStudentOrders() {
 
 
 export function getFeesPaid() {
-  let feesPaid = payments.filter((payment) => payment.status == "PAID");
+  let feesPaid = payments.filter((payment) => payment.status === "PAID");
   return feesPaid;
 }
 
 export function getPendingInstallments() {
-  let pendingInstallments = payments.filter((payment) => payment.status == "DUE");
+  let pendingInstallments = payments.filter((payment) => payment.status === "DUE");
   return pendingInstallments;
 }
 
 
 export function getFutureInstallments() {
-  let futureInstallments = payments.filter((payment) => payment.status == "OUTSTANDING");
+  let futureInstallments = payments.filter((payment) => payment.status === "OUTSTANDING");
   return futureInstallments;
 }
 
