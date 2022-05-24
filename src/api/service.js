@@ -10,9 +10,8 @@ const requestOptions = {
 let payments = [];
 
 export async function getStudent() {
-  let ruta = API_URL + '/students/3b35fb50-3d5e-41b3-96d6-c5566141fab0/';
   try {
-    const response = await fetch(ruta, requestOptions);
+    const response = await fetch(`${API_URL}/students/3b35fb50-3d5e-41b3-96d6-c5566141fab0/`, requestOptions);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -21,9 +20,8 @@ export async function getStudent() {
 }
 
 export async function getStudentOrders() {
-  let ruta = API_URL + '/students/3b35fb50-3d5e-41b3-96d6-c5566141fab0/orders';
   try {
-    const response = await fetch(ruta, requestOptions);
+    const response = await fetch(`${API_URL}/students/3b35fb50-3d5e-41b3-96d6-c5566141fab0/orders`, requestOptions);
     const data = await response.json();
     payments = data; 
     return data;
